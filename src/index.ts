@@ -1,13 +1,13 @@
-import { AppDataSource } from "./data-source";
 import express from "express";
-import seriesInfoRouter from "./routes/SeriesInfoRoutes";
+import { AppDataSource } from "./data-source";
+import seriesInfoRouter from "./routes/seriesInfoRoutes";
 AppDataSource.initialize()
   .then(() => {
     console.log("Database connected successfully");
 
     const app = express();
     app.use(express.json());
-    const PORT = (process.env.SERVER_PORT = "3000");
+    const PORT = process.env.SERVER_PORT || 6999;
     app.get("/", (req, res) => {
       res.send("Hello World");
     });

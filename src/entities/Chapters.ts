@@ -1,10 +1,4 @@
-import {
-  Entity,
-  Column,
-  PrimaryGeneratedColumn,
-  ManyToOne,
-  OneToOne,
-} from "typeorm";
+import { Entity, Column, OneToOne } from "typeorm";
 import MangaMetadata from "./SeriesMetadata";
 
 @Entity()
