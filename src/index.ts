@@ -9,7 +9,7 @@ AppDataSource.initialize()
     app.use(express.json());
     const PORT = process.env.SERVER_PORT || 6999;
     app.get("/", (req, res) => {
-      res.send("Hello World");
+      res.send("Data Layer Service is online.");
     });
 
     app.use("/series", seriesInfoRouter);
