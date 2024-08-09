@@ -47,9 +47,4 @@ const fetchFieldController = async (req: Request, res: Response) => {
   }
 };
 
-export {
-  uploadSeriesController,
-  fetchSeriesController,
-  fetchChaptersController,
-  fetchFieldController,
-};
+export { uploadSeriesController, fetchSeriesController, fetchFieldController };
