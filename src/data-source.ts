@@ -1,16 +1,16 @@
 import { DataSource } from "typeorm";
 import { Chapters, MangaMetadata } from "./entities";
 import { config } from "dotenv";
-
+import DB_CONFIG from "../db.config.json";
 const env = config().parsed;
-console.log(env);
+
 export const AppDataSource = new DataSource({
   type: "postgres",
-  host: env.DB_HOST || "localhost",
-  port: Number(env.DB_PORT) || 5432,
-  username: env.DB_USERNAME || "postgres",
-  password: env.DB_PASSWORD || "postgres",
-  database: env.DB_NAME || "postgres",
+  host: DB_CONFIG.DB_HOST,
+  port: Number(DB_CONFIG.DB_PORT),
+  username: DB_CONFIG.DB_USER,
+  password: DB_CONFIG.DB_PASS,
+  database: DB_CONFIG.DB_NAME,
   synchronize: true,
   logging: false,
   entities: [Chapters, MangaMetadata],
