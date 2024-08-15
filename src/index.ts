@@ -6,7 +6,7 @@ AppDataSource.initialize()
     console.log("Database connected successfully");
 
     const app = express();
-    app.use(express.json({ limit: "50mb" }));
+    app.use(express.json({ limit: "45mb" }));
     const PORT = process.env.SERVER_PORT || 6999;
     app.get("/", (req, res) => {
       res.send("Data Layer Service is online.");
