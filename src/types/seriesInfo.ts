@@ -1,5 +1,5 @@
 export type SeriesInfo = {
-  mangaId: string;
+  manga_id: string;
   title: string;
   author: string;
   image: string;

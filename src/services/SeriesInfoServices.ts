@@ -7,7 +7,7 @@ export const uploadSeries = async (seriesInfo: SeriesInfo) => {
   console.log("rating", seriesInfo)
   const metadataRepo = AppDataSource.getRepository(MangaMetadata);
   const metadata = new MangaMetadata();
-  metadata.manga_id = seriesInfo.mangaId;
+  metadata.manga_id = seriesInfo.manga_id;
   metadata.title = seriesInfo.title;
   metadata.author = seriesInfo.author;
   metadata.image = seriesInfo.image;
