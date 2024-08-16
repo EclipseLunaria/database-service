@@ -15,10 +15,10 @@ class MangaMetadata {
   @Column()
   image: string;
 
-  @Column()
+  @Column({nullable:true})
   totalVotes: string;
 
-  @Column()
+  @Column({nullable:true})
   ratingAvg: string;
 
   @Column()

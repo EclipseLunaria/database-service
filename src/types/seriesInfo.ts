@@ -11,7 +11,7 @@ export type SeriesInfo = {
   status: string;
   genres: string[];
   chapters: {
-    id: string;
+    chapter_id: string;
     title: string;
     link: string;
   }[];
