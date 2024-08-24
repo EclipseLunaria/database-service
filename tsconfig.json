@@ -11,6 +11,6 @@
     "experimentalDecorators": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*", "db.config.json"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
